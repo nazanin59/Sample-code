@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="all" href="styles/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="/js/oriDomi-master/oridomi.js"></script>
+    <script src="/js/oriDomi-master/oridomi.min.js"></script>
+    <script src="/js/jquery.cursometer.1.0.0.js"></script>
+  </head>
+  <body>
+  <style>
+  #first{
+    width:80%;
+    position:absolute;
+    z-index:999999;
+  }
+  #zero{
+    position:absolute;
+    top:0px;
+  }
+  #fold2 h1{width:100%;}
+  
+  #fold2  h1 div{
+    width:auto !important;
+    height:auto !important;
+    float:left !important;
+  }
+.boxi:hover{
+    transform:scaleY(-1);
+    transform-origin:center;
+  }
+
+  .noxi:hover{
+    transform:scaleY(-1);
+    transform-origin:center;
+  }
+
+  .module{
+    width:25%;
+    height:auto;
+    background:transparent;
+    position:relative;
+    margin-right:0%;
+    margin-bottom:1%;
+    float:left;
+    position:relative;
+  }
+  
+  .come-in{
+    transform: translateX(20px) rotate(5.5deg);
+    -webkit-transform: translateX(20px) rotate(5.5deg);
+    animation: come-in 1.2s ease forwards;
+  }
+  @keyframes come-in{
+    to { transform: translateY(0);}
+  }
+
+  #second{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    opacity: 0;
+    z-index: 0;
+  }
+  .module:first-child{
+    top:20%;
+    left:0%;
+  }
+  .module:nth-child(2){
+    top:20%;
+    left:0%;
+  }
+  .module:nth-child(3){
+    top:20%;
+    left:0%;
+  }
+  .module:nth-child(4){
+    top:20%;
+    left:0%;
+  }
+  #second.visible{
+    opacity:1;
+    z-index:100000000;
+  }
+
+  .module img{
+    width:100%;
+  }
+  .module .overlay{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(128,114,248,0.32);
+  }
+
+  .module a{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+
+  .module.four.come-in{
+transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+-webkit-transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+transform-origin: right bottom 0px; 
+transition: all 0.8s ease 0s;
+-webkit-transform-origin: right bottom 0px; 
+-webkit-transition: all 0.8s ease 0s;
+
+
+  }
+
+   .module.three.come-in{
+transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+-webkit-transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+transform-origin: right bottom 0px; 
+transition: all 0.8s ease 0s;
+-webkit-transform-origin: right bottom 0px; 
+-webkit-transition: all 0.8s ease 0s;
+
+
+  }
+
+   .module.two.come-in{
+transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+-webkit-transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+transform-origin: right bottom 0px; 
+transition: all 0.8s ease 0s;
+-webkit-transform-origin: right bottom 0px; 
+-webkit-transition: all 0.8s ease 0s;
+
+
+  }
+
+   .module.one.come-in{
+transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+-webkit-transform: matrix3d(0,0.5,-0.34,0,-0.50,0,-0.34,0,0.34,0.34,0.8835999999999999,0,800,500,0,1);
+transform-origin: right bottom 0px; 
+transition: all 0.8s ease 0s;
+-webkit-transform-origin: right bottom 0px; 
+-webkit-transition: all 0.8s ease 0s;
+
+
+  }
+
+  html{overflow-y:visible;}
+  body{background-color:#ff0000;}
+  </style>
+    
+    <div class="wrapper">
+      <main class="main_section">
+      <div id="first" class="paper" style="background-image:url('/images/fIrst-page.png');">
+      <div class="fold" id="fold1"></div>
+       <div class="fold" id="fold2"><h1><img src="/images/a.png"><img src="/images/t.png"><img src="/images/e.png"><img src="/images/f.png"><img src="/images/e.png"><img src="/images/h.png"></h1></div>
+        <div class="fold" id="fold3"></div>
+         <div class="fold" id="fold4"></div>
+      </div>
+      <div id="zero" class="main-fold" >
+        <div class="left-fold">
+        </div>
+
+        <div class="right-fold">
+          <div class="menu-wrapper">
+            <nav>
+            <ul id="navigation">
+            <li></li>
+              <li><a href="#">A B O U T</a></li>
+              <li><a href="#">C O N T A C T</a></li>
+              <li><a href="#">C R A Z Y<br/>T H O U G H T S</a></li>
+              <li></li>
+            </ul>
+            </nav>
+          </div>
+          <div class="copy-right"></div>
+        </div>
+
+      </div>
+      <div id="second" class="works">
+        <div class="module one"><a href="#"><img src="/images/nikalabs.png"><div class="overlay"></div></a></div>
+        <div class="module two"><a href="#"><img src="/images/protiviti.png"><div class="overlay"></div></a></div>
+        <div class="module three"><a href="#"><img src="/images/therma.png"><div class="overlay"></div></a></div>
+        <div class="module four"><a href="#"><img src="/images/fedex.png"><div class="overlay"></div></a></div>
+        
+      </div>
+
+        </main>
+    </div>
+    <script>
+     //$(document).ready(function(){
+       
+
+
+//var boxCenter=[box.offset().left+box.width()/2, box.offset().top+box.height()/2];
+
+//$(document).mousemove(function(e){    
+    
+        
+  //var angle = Math.atan2(e.pageX- boxCenter[0],- (e.pageY- boxCenter[1]) )*(180/Math.PI);     
+    
+   // box.css({ "-webkit-transform": 'rotate(' + angle + 'deg)'});    
+   // box.css({ '-moz-transform': 'rotate(' + angle + 'deg)'});
+   // box.css({ 'transform': 'rotate(' + angle + 'deg)'});
+    
+//});
+
+//});
+
+
+
+    
+  var folded = new OriDomi('.paper', {
+   vPanels:         4,     // number of panels when folding left or right (vertically oriented)
+  hPanels:         2,     // number of panels when folding top or bottom
+  speed:           1200  // folding duration in ms
+  
+     });
+
+      $("#first").click(function(){
+      
+        folded.accordion(-77).stairs(65);
+   
+   });
+      $(document).ready(function(){
+        //$('h1').each(function (index) {
+    //var characters = $(this).text().split("");
+    
+    //$this = $(this);
+   // $this.empty();
+   // $.each(characters, function (i, el) {
+   // $this.append("<div>" + el + "</div>");
+    
+   // });
+
+//});
+
+   $(".fold h1 img:nth-child(3)").addClass('boxi'); 
+       $(".fold h1 img:nth-child(5)").addClass('noxi'); 
+      
+     
+
+
+
+
+var boxi = $(".boxi");
+var noxi = $(".noxi");  
+var boxCenter=[boxi.offset().left+boxi.width()/2, boxi.offset().top+boxi.height()/2];
+
+
+
+
+    $(window.document).cursometer({
+    onUpdateSpeed: function(speed) {
+       var currSpeed = parseInt(speed);
+        
+        
+       if(currSpeed === 0)
+       {
+        boxi.css('transfrom', 'scale(0)');
+         noxi.css('transfrom', 'scale(0)');
+     }
+     else
+        {
+        
+        
+         boxi.css('transition', 'all'  + parseInt(speed));
+        boxi.css('transform-origin',  + boxCenter );
+
+       noxi.css('transition', 'all'  + parseInt(speed));
+        noxi.css('transform-origin',  + boxCenter );
+        }
+      
+    }
+  });
+
+//$(window.document).cursometer({
+     // onUpdateSpeed: function(speed) {
+       // var currSpeed = parseInt(speed);
+        
+        
+       // if(currSpeed === 0)
+       // {
+         // boxi.css('transfrom', 'rotate(0)');
+         // noxi.css('transfrom', 'rotate(0)');
+        //}
+       // else
+       // {
+        
+        
+          //boxi.css('transition', 'all'  + parseInt(speed));
+          //boxi.css('transform-origin',  + boxCenter );
+
+          //noxi.css('transition', 'all'  + parseInt(speed));
+          //noxi.css('transform-origin',  + boxCenter );
+          //}
+      
+   // }
+ // });
+  
+
+
+
+      });
+
+(function($) {
+
+  
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".module");
+var second = $("#second");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+
+  } 
+});
+
+win.scroll(function(event) {
+  second.toggleClass("visible");
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.toggleClass("come-in"); 
+
+    } 
+  });
+  
+});
+
+    
+    
+    </script>
+  </body>
+</html>

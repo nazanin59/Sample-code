@@ -1,0 +1,105 @@
+html{
+	overflow:hidden;
+}
+.wrapper{
+	width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #ff0000;
+}
+
+.main_section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-fold{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+.left-fold{
+	width:50%;
+    float:left;
+    height:100%;
+}
+
+ .right-fold{
+    width:50%;
+    float:right;
+    clear:right;
+    height:100%;
+}
+
+.menu-wrapper{
+	width:50%;
+	float:left;
+	height:100%;
+ }
+
+ .copy-right{
+ 	width:50%;
+ 	float:right;
+ 	height:100%;
+ }
+ nav{
+ 	width:100%;
+ 	height:100%;
+ }
+ nav > ul > li {
+ 	position:relative !important;
+ 	height:20%;
+ 	width:100%;
+ 	display":block;
+ 	
+ }
+
+ nav > ul > li > a{
+ 	color:#000000;
+ 	text-decoration:none !important;
+ 	position:absolute;
+ 	height:100%;
+ 	top:50%;
+
+ }
+
+ ul#navigation{
+ 	width:100%;
+ 	height:100%;
+ 	padding:0px !important;
+ 	margin:0px !important;
+ 	list-style:none !important;
+ }
+ #first{
+ 	width:80%;
+ 	height:100%;
+ 	display:block;
+    left:0px;
+    right:0px;
+    margin:0px auto;
+    top:5%;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:top left;
+
+ }
+.oridomi-shader-left{
+	background:none !important;
+}
+
+.fold{
+    width: 25%;
+    float: left;
+    display: block;
+    height: 100%;
+}
+h1{
+	font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    font-size: 500%;
+    position: absolute;
+    top:25%;
+}
+ 

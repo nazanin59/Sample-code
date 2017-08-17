@@ -1,0 +1,26 @@
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-facebook25 {
+	width: 1.4794921875em;
+}
+
+.icon-linkedin10 {
+	width: 1.4794921875em;
+}
+
+.icon-twitter16 {
+	width: 1.4794921875em;
+}

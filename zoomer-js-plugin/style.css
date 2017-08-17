@@ -1,0 +1,42 @@
+
+.zoom-holder {
+    width: 38%;
+    margin: 0px auto;
+    background-color: #1a2447;
+    padding: 2% 6%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 2%;
+    z-index: 99999999;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.zoom-holder .start {
+    margin-right: 20px;
+}
+
+.zoom-holder .left-hand {
+    vertical-align: bottom;
+    margin-right: -4px;
+}
+
+.zoom-range {
+    width: 78% !important;
+    height: 3px !important;
+}
+input {
+    -webkit-appearance: none;
+}
+.zoom-holder .right-hand {
+    vertical-align: bottom;
+    margin-left: -3px;
+}
+.zoom-holder .finish {
+    margin-left: 20px;
+}

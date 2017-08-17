@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'YacarenaUltra';
+    src: url('fonts/YacarenaUltra.eot');
+    src: url('fonts/YacarenaUltra.eot') format('embedded-opentype'),
+         url('fonts/YacarenaUltra.woff2') format('woff2'),
+         url('fonts/YacarenaUltra.woff') format('woff'),
+         url('fonts/YacarenaUltra.ttf') format('truetype'),
+         url('fonts/YacarenaUltra.svg#YacarenaUltra') format('svg');
+}
